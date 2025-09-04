@@ -1,0 +1,6 @@
+google-cloud-bigquery
+SQLAlchemy 
+pandas-gbq
+pandas
+psycopg2-binary
+requests

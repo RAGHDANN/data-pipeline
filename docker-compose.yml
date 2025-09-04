@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  data-pipeline:
+    build: .
+    image: data-pipeline:latest
+    environment:
+      - PG_HOST=${PG_HOST}
+      - PG_PORT=${PG_PORT:-5432}
+      - PG_DB=${PG_DB}
+      - PG_USER=${PG_USER}
+      - PG_PASSWORD=${PG_PASSWORD}
+      - GCP_PROJECT_ID=${GCP_PROJECT_ID}
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/sa.json
+    volumes:
+      - ./data-pipeline-task-1e0100e6676c.json:/app/sa.json:ro
+    restart: "no"
