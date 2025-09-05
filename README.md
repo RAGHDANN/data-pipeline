@@ -23,7 +23,6 @@ This project implements an **incremental data pipeline** using Google Cloud serv
 ---
 
 ## 🏗️ Architecture
-![architecture](docs/architecture.png)
 
 1. Extract users from Postgres → `raw_data.users`.
 2. Extract posts from API → `raw_data.posts`.
@@ -110,5 +109,4 @@ In the GCP Console:
 
 
 
-تحب أكتبلك كمان سكريبت bash صغير يولّد **docs/architecture.png** (رسم معماري بسيط) باستخدام mermaid؟
 ```
